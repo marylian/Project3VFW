@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function () {
 		editLink.href= "#"; 
 		editLink.key=key; 
 		var editText= "Edit Task";
-		//editLink.addEventListener("click",editItem);
+		editLink.addEventListener("click",editItem);
 		editLink.innerHTML=editText;
 		linksLi.appendChild(editLink);
 		
@@ -105,6 +105,11 @@ window.addEventListener("DOMContentLoaded", function () {
 		//deleteLink.addEventListener("click",deleteItem);
 		deleteLink.innerHTML=deleteText;
 		linksLi.appendChild(deleteLink);
+	}
+	
+	function editItem(){
+		//Gran the data from out item from local storage.
+		var
 	}
 	
 	//Clears the data from localStorage
